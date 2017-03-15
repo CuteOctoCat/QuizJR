@@ -14,7 +14,7 @@ public class MainInterface extends AppCompatActivity {
         setContentView(R.layout.activity_main_interface);
         // alambramos el Button
         // alambramos el Button
-        Button MiButton = (Button) findViewById(R.id.btninicio);
+        Button MiButton = (Button) findViewById(R.id.btnir);
 
         //Programamos el evento onclick
 

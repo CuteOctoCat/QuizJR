@@ -11,36 +11,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="una.quizjr.MainInterface">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:weightSum="1"
+    <ImageView
+        app:srcCompat="@drawable/quizjr"
+        android:id="@+id/imageView"
+        android:layout_weight="0.11"
+        android:scaleType="fitCenter"
+        android:layout_height="200dp"
+        android:layout_width="700dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            app:srcCompat="@drawable/quizjr"
-            android:id="@+id/imageView"
-            android:layout_height="140dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="0.11" />
-
-        <GridView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0.11" >
-
-            <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btninicio" />
-        </GridView>
-
-    </LinearLayout>
+    <Button
+        android:text="Jugar"
+        android:id="@+id/btnir"
+        android:layout_weight="0.11"
+        android:layout_marginTop="261dp"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginEnd="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
