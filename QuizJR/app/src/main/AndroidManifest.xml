@@ -14,7 +14,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+        <activity android:name=".MainInterface">
+
+        </activity>
+        <activity android:name=".MainColores" />
+        <activity android:name=".MainAnimales"></activity>
     </application>
 
 </manifest>

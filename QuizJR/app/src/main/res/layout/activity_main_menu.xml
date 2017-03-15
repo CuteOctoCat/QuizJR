@@ -8,10 +8,25 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="una.quizjr.MainMenu">
+    tools:context="una.quizjr.MainMenu"
+    android:background="@android:color/holo_blue_dark">
 
     <TextView
+        android:text="Bienvenidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_height="700dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView2"
+        android:layout_width="300dp" />
+
 </RelativeLayout>
