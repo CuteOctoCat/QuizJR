@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class MainInterface extends AppCompatActivity {
 
@@ -14,11 +15,11 @@ public class MainInterface extends AppCompatActivity {
         setContentView(R.layout.activity_main_interface);
         // alambramos el Button
         // alambramos el Button
-        Button MiButton = (Button) findViewById(R.id.btnir);
+        ImageView Next = (ImageView) findViewById(R.id.irsiguiente);
 
         //Programamos el evento onclick
 
-        MiButton.setOnClickListener(new View.OnClickListener(){
+        Next.setOnClickListener(new View.OnClickListener(){
 
             @Override
 
