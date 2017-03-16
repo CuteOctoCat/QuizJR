@@ -12,6 +12,15 @@
     tools:context="una.quizjr.MainInterface">
 
     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/letsplay"
+        android:layout_marginTop="61dp"
+        android:id="@+id/irsiguiente"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
         app:srcCompat="@drawable/quizjr"
         android:id="@+id/imageView"
         android:layout_weight="0.11"
@@ -19,21 +28,6 @@
         android:layout_height="200dp"
         android:layout_width="700dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="113dp"
-        android:layout_marginStart="113dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/letsplay"
-        android:layout_marginTop="261dp"
-        android:id="@+id/irsiguiente"
-        android:layout_marginRight="106dp"
-        android:layout_marginEnd="106dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
