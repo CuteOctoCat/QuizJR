@@ -16,6 +16,7 @@ public class MainColores extends AppCompatActivity {
     private TextView txtVerde;
     private TextView txtRojo;
     private TextView txtAmarillo;
+    private TextView txtAzul;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,17 +25,19 @@ public class MainColores extends AppCompatActivity {
         txtVerde = (TextView) findViewById(R.id.Verde);
         txtRojo = (TextView) findViewById(R.id.Rojo);
         txtAmarillo = (TextView) findViewById(R.id.Amarillo);
+        txtAzul = (TextView) findViewById(R.id.Azul);
     }
 
     public void SetActionBar(String msg){
         getSupportActionBar().setTitle(msg);
     }
-    public void pickColor(View view) {
+    public void pickColor(final View v) {
         ColorPickerDialogBuilder
                 .with(this)
-                .setTitle("Eliga un color")
+                .setTitle("Elija el color solicitado")
                 .wheelType(ColorPickerView.WHEEL_TYPE.CIRCLE)
                 .density(1)
+                .noSliders()
                 .setOnColorSelectedListener(new OnColorSelectedListener() {
                     @Override
                     public void onColorSelected(int selectedColor) {
@@ -44,9 +47,21 @@ public class MainColores extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int selectedColor, Integer[] allColors) {
                         Log.d("DEBUG", String.valueOf(selectedColor));
+                        switch (v.getId()) {
+                            case (R.id.btnVerde):
+                                txtVerde.setBackgroundColor(selectedColor);
+                                break;
+                            case (R.id.btnRojo):
+                                txtRojo.setBackgroundColor(selectedColor);
+                                break;
+                            case (R.id.btnAmarillo):
+                                txtAmarillo.setBackgroundColor(selectedColor);
+                                break;
+                            case (R.id.btnAzul):
+                                txtAzul.setBackgroundColor(selectedColor);
+                                break;
 
-
-                        txtVerde.setText(view.getId());
+                        }
                     }
                 })
                 .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {

@@ -11,18 +11,70 @@
     android:background="@android:color/holo_blue_dark">
     tools:context="una.quizjr.MainColores">
     <Button
-        android:layout_width= "wrap_content"
-        android:layout_height= "wrap_content"
+        android:layout_width= "100dp"
+        android:layout_height= "46dp"
         android:onClick= "pickColor"
         android:text= "Verde"
-        android:id="@+id/btnVerde" />
+        android:id="@+id/btnVerde"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <TextView
         android:id="@+id/Verde"
         android:layout_width= "50dp"
         android:layout_height= "50dp"
-        android:layout_alignBottom="@+id/btnVerde"
-        android:layout_toRightOf="@+id/btnVerde"
-        android:layout_toEndOf="@+id/btnVerde"
-        android:layout_marginLeft="23dp"
-        android:layout_marginStart="23dp" />
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Rojo"
+        android:layout_alignStart="@+id/Rojo" />
+    <Button
+        android:layout_width= "100dp"
+        android:layout_height= "46dp"
+        android:onClick= "pickColor"
+        android:text= "Rojo"
+        android:id="@+id/btnRojo"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/Verde"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/Rojo"
+        android:layout_width= "50dp"
+        android:layout_height= "50dp"
+        android:layout_above="@+id/btnAmarillo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width= "100dp"
+        android:layout_height= "46dp"
+        android:onClick= "pickColor"
+        android:text= "Amarillo"
+        android:id="@+id/btnAmarillo"
+        android:layout_below="@+id/btnRojo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+    <TextView
+        android:id="@+id/Amarillo"
+        android:layout_width= "50dp"
+        android:layout_height= "50dp"
+        android:layout_alignTop="@+id/btnAmarillo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" /> />
+    <Button
+        android:layout_width= "100dp"
+        android:layout_height= "46dp"
+        android:onClick= "pickColor"
+        android:text= "Azul"
+        android:id="@+id/btnAzul"
+        android:layout_below="@+id/btnAmarillo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+    <TextView
+        android:id="@+id/Azul"
+        android:layout_width= "50dp"
+        android:layout_height= "50dp"
+        android:layout_alignBottom="@+id/btnAzul"
+        android:layout_alignLeft="@+id/Amarillo"
+        android:layout_alignStart="@+id/Amarillo" />
 </RelativeLayout>
